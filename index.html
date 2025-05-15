@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Test</title>
+    
+      <link rel="icon" href="cat.png.jpg">
+      <style>
+        #sc{
+          text-align: center;
+        }
+        div{
+          width: 200px;
+          height: 200px;
+          overflow: auto;
+        }
+      </style>
+    </head>
+    <body>
+       <div id="i"> </div>
+       <input type="text" id="txt">
+       <input type="button" value="comment" onclick="comment()">
+      <script>
+      function comment()
+      {
+      d=document.getElementById("i");
+      t=document.getElementById("txt");
+      e=document.createElement("p");
+      s=document.createTextNode(t.value);
+      e.appendChild(s);
+      d.appendChild(e);
+      t.focus();
+      }
+      </script>
+    </body>
+</html>
