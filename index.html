@@ -16,20 +16,19 @@
       </style>
     </head>
     <body>
-       <div id="i"> </div>
-       <input type="text" id="txt">
-       <input type="button" value="comment" onclick="comment()">
+       <select id="country">
+        <option>--select--</option>
+       </select>
       <script>
-      function comment()
-      {
-      d=document.getElementById("i");
-      t=document.getElementById("txt");
-      e=document.createElement("p");
-      s=document.createTextNode(t.value);
-      e.appendChild(s);
-      d.appendChild(e);
-      t.focus();
-      }
+       c=document.getElementById("country");
+       a=["india","china"]
+       for(i=0;i<a.length;i++)
+       {
+        d=document.createElement("option");
+        s=document.createTextNode(a[i]);
+        d.appendChild(s);
+        c.appendChild(d);
+       }
       </script>
     </body>
 </html>
