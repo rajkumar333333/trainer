@@ -2,33 +2,30 @@
 <html>
     <head>
       <title>Test</title>
-    
       <link rel="icon" href="cat.png.jpg">
-      <style>
-        #sc{
-          text-align: center;
-        }
-        div{
-          width: 200px;
-          height: 200px;
-          overflow: auto;
-        }
-      </style>
+      <link rel="stylesheet" href="style.css">
     </head>
     <body>
-       <select id="country">
-        <option>--select--</option>
-       </select>
-      <script>
-       c=document.getElementById("country");
-       a=["india","china"]
-       for(i=0;i<a.length;i++)
-       {
-        d=document.createElement("option");
-        s=document.createTextNode(a[i]);
-        d.appendChild(s);
-        c.appendChild(d);
-       }
-      </script>
+       <header>AA perfume</header>
+       <nav>
+        <ol>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a>
+            <ol id="id3">
+              <li>ADD</li>
+              <li>SUB</li>
+              <li>MUL</li>
+            </ol>
+          </li>
+          <li><a href="Careers.html">Careers</a></li>
+        </ol>
+       </nav>
+       <section id="sec1">
+       <article><img src="perfume12.jpg"></article>
+       <article><img src="perfume14.jpg"></article>
+       <article><img src="perfume15.jpg"></article>
+       <article><img src="perfume16.jpg"></article>
+       </section>
     </body>
 </html>
